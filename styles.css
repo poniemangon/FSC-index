@@ -331,7 +331,7 @@ ul {list-style: none;}
 .newsletter-section .container .texts a.btn:hover {background-color: var(--primary); transition: 0.3s;}
 
 @media(max-width: 992px){
-    .newsletter-section {margin-top: 0}
+    .newsletter-section {margin-top: 0; background-position: right 48%;}
 
     .newsletter-section .container .texts {width: 100%; text-align: center; align-items: center;}
 
