@@ -205,7 +205,7 @@ ul {list-style: none;}
 
 /* rounded-boxes-section styles start */
 
-.rounded-boxes-section .container {flex-direction: column; bottom: 120px; position: relative; margin-bottom: -120px;}
+.rounded-boxes-section .container {flex-direction: column; bottom: 150px; position: relative; margin-bottom: -120px;}
 
 .rounded-boxes-section .container .boxes {height: 410px; width: 100%; }
 
