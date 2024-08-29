@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSC</title>
+    <meta name="description" content="Funeral Shipping & Consulate Assistant">
+    <title>Funeral Shipping & Consulate Assistant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png" />
@@ -35,11 +48,11 @@
                 
 </head>
 <body>
-    <header>
+    <header class="light-nav">
         <section class="navbar-section">
             <div class="container">
                 <ul class="d-flex justify-content-space-btwn align-items-center desktop-menu">
-                    <li><a href="/"><img src="./images/navbar-logo.png" alt=""></a></li>
+                    <li><a href="/"><img src="./images/navbar-logo.png" alt="FSC Logo"></a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Search</a></li>
                     <li><a href="">Network</a></li>
@@ -47,37 +60,68 @@
                     <li><a class="btn" href="">Contact Us</a></li>
                 </ul>
                 <div class="mobile-navbar d-flex justify-content-space-btwn align-items-center">
-                    <a class="navbar-logo-mobile" href="/"><img src="./images/navbar-logo.png" alt=""></a>
+                    <a class="navbar-logo-mobile" href="/"><img src="./images/navbar-logo.png" alt="FSC Logo"></a>
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-x"></i>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Search</a></li>
+                        <li><a href="">Network</a></li>
+                        <li><a href="">Documents</a></li>
+                        <li><a class="btn" href="">Contact Us</a></li>
+                    </ul>
+                </div>
  
             </div>
-            <div class="mobile-menu">
-                <i class="fa-solid fa-x"></i>
-                <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Network</a></li>
-                    <li><a href="">Documents</a></li>
-                    <li><a class="btn" href="">Contact Us</a></li>
-                </ul>
-            </div>
+
         </section>
     </header>
     <main>
         <section class="banner-section">
-            <div class="container d-flex">
-                <h1>Search by country</h1>
-                <form action="" class="input-field d-flex align-items-center justify-content-space-btwn">
-                    <input type="text" placeholder="Type your country...">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-
+            <div class="carousel-banner">
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="content d-flex">
+                            <h1>Search by country</h1>
+                            <form action="" class="input-field d-flex align-items-center justify-content-space-btwn">
+                                <input type="text" placeholder="Type your country...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <img src="./images/Avion.png" alt="" class="plane">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="content d-flex">
+                            <h1>Search by country</h1>
+                            <form action="" class="input-field d-flex align-items-center justify-content-space-btwn">
+                                <input type="text" placeholder="Type your country...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <img src="./images/Avion.png" alt="" class="plane">
+                        </div>
+                    </div>
+                </div> 
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="content d-flex">
+                            <h1>Search by country</h1>
+                            <form action="" class="input-field d-flex align-items-center justify-content-space-btwn">
+                                <input type="text" placeholder="Type your country...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <img src="./images/Avion.png" alt="" class="plane">
+                        </div>
+                    </div>
+                </div>                  
             </div>
+
         </section>
         <section class="rounded-boxes-section">
-            <div class="container d-flex">
+            <div class="container">
                 <div class="boxes d-flex justify-content-space-btwn align-items-center">
                     <div class="col first-col">
                         <div class="box">
@@ -125,7 +169,7 @@
                     </div>
                 </div>
                 <div class="texts-heading d-flex">
-                    <img class="m-auto" src="./images/logo.png" alt="">
+                    <img class="m-auto" src="./images/logo.png" alt="FSC - Plane logo">
                     <h2>Repatriate better, faster, smarter</h2>
                 </div>
             </div>
@@ -143,7 +187,6 @@
                                 <option value="mexico">Mexico</option>
                                 
                             </select>
-                            <i class="fa-solid fa-caret-right"></i>
                         </div>
                         <div class="select-block align-items-center d-flex">
                             <i class="fa-solid fa-location-dot"></i>
@@ -154,7 +197,6 @@
                                 <option value="mexico">Mexico</option>
                                 
                             </select>
-                            <i class="fa-solid fa-caret-right"></i>
                         </div>
                     </div>
                     <div class="outlined select-block align-items-center d-flex">
@@ -167,8 +209,6 @@
                             
                              
                         </select>
-                        <i class="fa-solid fa-caret-right"></i>
-
                     </div>
 
 
@@ -182,10 +222,14 @@
                         </div>
                     </div>
                     <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
                         <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
                         <div class="texts">
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -195,13 +239,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -211,13 +250,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -227,13 +261,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -243,13 +272,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -259,13 +283,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -275,13 +294,8 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
-                    </div>
-                    <div class="file files-item">
-                        <img class="elypsis" src="./images/elipse.png" alt="">
-                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
-                        <div class="texts">
-                            <h5 class="bold">Name</h5>
-                            <h5>Description</h5>
+                        <div class="download-modal">
+                            <a href="">Download</a>
                         </div>
                     </div>
                     <div class="file files-item">
@@ -291,16 +305,91 @@
                             <h5 class="bold">Name</h5>
                             <h5>Description</h5>
                         </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
                     </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    <div class="file files-item">
+                        <img class="elypsis" src="./images/elipse.png" alt="">
+                        <img src="./images/pdf-rectangle.png" class="pdf-rectangle" alt="FSC - pdf rectangle">
+                        <div class="texts">
+                            <h5 class="bold">Name</h5>
+                            <h5>Description</h5>
+                        </div>
+                        <div class="download-modal">
+                            <a href="">Download</a>
+                        </div>
+                    </div>
+                    
+                   
                 </div>
             </div>
         </section>
         <section class="newsletter-section">
-            <div class="container d-flex">
-                <img class="guy" src="./images/nwesletter-guy.png" alt="">
-                <div class="texts">
-                    <h2>Dedicated Human Assistance</h2>
-                    <a href="/" class="btn">personalized attention</a>
+            <div class="container">
+                <div class="content d-flex">
+                    <div class="newsletter-guy col">
+                        <img class="guy" src="./images/nwesletter-guy.png" alt="FSC - Newsletter">
+                    </div> 
+                    <div class="texts col">
+                        <h2>Dedicated Human Assistance</h2>
+                        <a href="/" class="btn">personalized attention</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -309,7 +398,7 @@
     <footer>
         <section class="main-footer-section">
             <div class="container">
-                <img src="./images/navbar-logo.png" alt="" class="logo">
+                <img src="./images/navbar-logo.png" alt="FSC - logo" class="logo">
                 <ul class="d-flex align-items-center">
                     <li><a href="">About Us</a></li>
                     <li><a href="">Search</a></li>
@@ -326,7 +415,7 @@
         </section>
         <section class="legales-section">
             <div class="container">
-                <p>© 2024 Funeral Shipping and Consultant Assistance.  All rights reserved           |            Web design Digital Marketing Agency Rednodo</p>
+                <p>© 2024 Funeral Shipping and Consulate Assistant.  All rights reserved           <span class="divider">|</span>          <span><a href="https://rednodo.com/">Web design Digital Marketing Agency Rednodo</a></span></p>
             </div>
         </section>
     </footer>
@@ -334,6 +423,11 @@
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+"></script>
+
+
   <script src="./script.js"></script>
 </body>
 </html>

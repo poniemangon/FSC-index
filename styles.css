@@ -57,6 +57,8 @@ ul {list-style: none;}
 
 /* navbar styles start */
 
+/* LIGHT NAV */
+
 .navbar-section {position: fixed; width: 100%; transition: 0.3s ease; z-index: 5;}
 
 .navbar-section .container {padding: 40px 0;}
@@ -71,12 +73,14 @@ ul {list-style: none;}
 
 .navbar-section.scrolled {
     background-color: white;
-    box-shadow: 7px 13px 41px -19px rgba(184,184,184,1);
+    box-shadow: 7px 13px 41px -19px rgb(157, 157, 157);
 }
 
 .navbar-section .container .mobile-navbar {display: none;}
 
-.navbar-section .mobile-menu {display: none;}
+.navbar-section .container .mobile-menu {display: none;}
+
+
 
 @media (max-width: 992px){
     .navbar-section .container .desktop-menu {display: none;}
@@ -85,44 +89,115 @@ ul {list-style: none;}
 
     .navbar-section .container .mobile-navbar .fa-bars {font-size: 30px; color: var(--primary);}
 
-    .navbar-section .mobile-menu {position: absolute; height: 100vh; width: 100vw; background-color: white; top: 0;}
+    .navbar-section .container .mobile-menu {position: absolute; height: 60vh; width: 80vw; max-height: 500px;background-color: white; top: 0; right: 10%; top: 115px; box-shadow: 7px 20px 45px -39px rgba(184, 184, 184, 1);}
 
-    .navbar-section .mobile-menu .fa-x {color: var(--primary); font-size: 30px; margin: 10px; position: relative; }
+    .navbar-section .container .mobile-menu .fa-x {color: var(--primary); font-size: 30px; margin: 10px; position: relative; display: none;}
 
-    .navbar-section .mobile-menu ul li {margin-bottom: 30px; text-align: center;}
+    .navbar-section .container .mobile-menu ul {display: flex; flex-direction: column; height: 100%; justify-content: space-between;}
+
+    .navbar-section .container .mobile-menu ul li {margin-bottom: auto; text-align: center;}
 }
+
+/* DARK NAV */
+
+.dark-nav .navbar-section img {transition: 0.8s;}
+
+.dark-nav .navbar-section a {color: white;}
+
+.dark-nav .navbar-section .btn {border: 1px solid white;}
+
+.dark-nav .navbar-section a:hover {color: var(--secondary); transition: 0.3s;}
+
+.dark-nav .navbar-section .btn:hover {background-color: white; color: black;}
+
+.dark-nav .navbar-section .mobile-navbar .fa-bars {color: white;}
+
+
+
+.dark-nav .navbar-section.scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 13px 41px -19px rgb(54, 54, 54);
+} 
+
+.dark-nav .navbar-section.scrolled .fa-bars {color: black;}
+
+.dark-nav .navbar-section.scrolled a {color: black;}
+
+.dark-nav .navbar-section.scrolled img {content: url('./images/navbar-logo.png');}
+
+.dark-nav .navbar-section.scrolled .mobile-menu {background-color: white;}
+
+.dark-nav .navbar-section.scrolled .btn {border: solid 1px black;}
+
+.dark-nav .navbar-section.scrolled .btn:hover {background-color: black; color: white;}
 
 /* navbar styles end */
 
 /* banner section styles start */
 
-.banner-section {background: url('./images/main-banner.jpg'); background-size: cover; height: 85vh; background-position: center; background-repeat: no-repeat;}
+.banner-section .carousel-banner .carousel-item {background: url('./images/main-banner.jpg'); background-size: cover; height: 100vh; background-position: center; background-repeat: no-repeat; position: relative}
 
-.banner-section .container {height: 100%; align-items: center; flex-direction: column; justify-content: center; position: relative; bottom: 150px}
+.banner-section .carousel-banner .carousel-item .container {height: 100%; position: relative;}
 
-.banner-section .container h1 {color: white; text-align: center; margin-bottom: 30px;}
+.banner-section .carousel-banner .carousel-item .container .content {height: 100%; align-items: center; flex-direction: column; justify-content: center; position: relative; bottom: 130px}
 
-.banner-section .container .input-field {background-color: white; border-radius: 30px; padding: 5px 0; max-width: 792px; width: 66%;}
+.banner-section .carousel-banner .carousel-item .container .content h1 {color: white; text-align: center; margin-bottom: 30px; line-height: 1; position: relative; z-index: 1;}
 
-.banner-section .container .input-field input, .banner-section .container .input-field input::placeholder {border: none; color: black; margin-left: 20px;}
+.banner-section .carousel-banner .carousel-item .container .content .input-field {background-color: white; border-radius: 30px; padding: 5px 0; max-width: 792px; width: 66%; box-shadow: 7px 20px 45px -39px rgba(184, 184, 184, 1); position: relative; z-index: 5;}
 
-.banner-section .container .input-field input:focus {outline: none; width: 100%;}
+.banner-section .carousel-banner .carousel-item .container .content .plane {position: absolute; top: 46%; z-index: 4; max-width: 550px;}
 
-.banner-section .container .input-field button {border: none; background-color: var(--secondary); border-radius: 100%; padding: 8px; line-height: 1; color: white; font-size: 20px; margin-right: 5px; cursor: pointer; transition: 0.3s;}
+.banner-section .carousel-banner .carousel-item .container .content .input-field input, .banner-section .carousel-banner .carousel-item .container .content .input-field input::placeholder {border: none; color: black; margin-left: 20px;}
 
-.banner-section .container .input-field button:hover {background-color: var(--primary);}
+.banner-section .carousel-banner .carousel-item .container .content .input-field input:focus {outline: none; width: 100%;}
+
+.banner-section .carousel-banner .carousel-item .container .content .input-field button {border: none; background-color: var(--secondary); border-radius: 100%; padding: 8px; line-height: 1; color: white; font-size: 20px; margin-right: 5px; cursor: pointer; transition: 0.3s;}
+
+.banner-section .carousel-banner .carousel-item .container .content .input-field button:hover {background-color: var(--primary);}
+
+.banner-section .carousel-banner .slick-dots {position: absolute; bottom: 58%; display: flex; flex-direction: column; transform: scaleX(-1);}
+
+.banner-section .carousel-banner .slick-dots li {left: 9%; line-height: 1;  color: white; font-weight: 400; border-top: 1px solid white; width: 15px; transition: 0.3s; box-sizing: border-box; padding-bottom: 3px;}
+
+.banner-section .carousel-banner .slick-dots li.slick-active {border-top: 2px solid white; width: 25px;  transition: 0.3s;}
+
+.banner-section .carousel-banner .slick-dots li button {visibility: hidden;}
 
 @media(max-width: 992px){
-    .banner-section {height: 75vh;}
+    .banner-section .carousel-banner .carousel-item {height: 75vh; min-height: 600px}
 
-    .banner-section .container {position: unset;}
+    .banner-section .carousel-banner .carousel-item .container .content {position: unset;}
 
-    .banner-section .container .input-field {width: 100%;}
+    .banner-section .carousel-banner .carousel-item .container .content .input-field {width: 100%;}
+
+    .banner-section .carousel-banner .carousel-item .container .content .plane {width: 75%; top: 33%; z-index: 0;}
+
+    .banner-section .carousel-banner .carousel-item .container .content .lines {right: 10%; top: 140px;}
 
 }
 @media(max-width: 540px){
-    .banner-section .container .input-field input {max-width: 168px;}
+
+    .banner-section .carousel-banner .carousel-item .container .content {margin-top: 0; height: 90%;}
+
+    
+    .banner-section .carousel-banner .carousel-item .container .content .plane {display: none;}
+
+    .banner-section .carousel-banner .carousel-item .container .content .input-field input {max-width: 168px;}
+
+    
+    .banner-section .carousel-banner .slick-dots {position: absolute; bottom: 10%; display: flex; flex-direction: row; transform: unset; width: 100%; justify-content: center; }
+
+    .banner-section .carousel-banner .slick-dots li {width: 20px;  border-top: solid 2px white; left: unset; transform: unset;}
+
+    .banner-section .carousel-banner .slick-dots li.slick-active {border-top: 2px solid white; width: 20px;  transition: 0.3s; border-top: solid 3px white;}
+
+
+    
 }
+
+
+
+
 
 /* banner section styles end */
 
@@ -146,9 +221,9 @@ ul {list-style: none;}
 
 /* inner text grey */
 
-.rounded-boxes-section .container .boxes .inner-text-left {background-color: #f1f1f1; border-bottom-left-radius: 20px; border-top-right-radius: 20px; padding: 15px; display: flex; flex-direction: column; text-align: left; justify-content: center;   }
+.rounded-boxes-section .container .boxes .inner-text-left {background-color: #f1f1f1; border-bottom-left-radius: 20px; border-top-right-radius: 20px; padding: 15px 20px; display: flex; flex-direction: column; text-align: left; justify-content: center;   }
 
-.rounded-boxes-section .container .boxes .inner-text-right {background-color: #f1f1f1; border-bottom-right-radius: 20px; border-top-left-radius: 20px; padding: 15px; display: flex; flex-direction: column; text-align: right; justify-content: center; }
+.rounded-boxes-section .container .boxes .inner-text-right {background-color: #f1f1f1; border-bottom-right-radius: 20px; border-top-left-radius: 20px; padding: 15px 20px; display: flex; flex-direction: column; text-align: right; justify-content: center; }
 
 /* inner text grey */
 
@@ -204,7 +279,7 @@ ul {list-style: none;}
 /* second column */
 
 @media (max-width: 992px){
-.rounded-boxes-section .container   {margin-bottom: auto;}
+.rounded-boxes-section .container   {margin-bottom: auto; padding-top: 65px;}
 
 .rounded-boxes-section .container .boxes {height: unset;}
     
@@ -252,7 +327,7 @@ ul {list-style: none;}
 
 .files-section .container .selects i {font-size: 14px; margin-right: 10px;}
 
-.files-section select {appearance: none; width: 100px;}
+.files-section select {appearance: none; width: 100px; flex-grow: 1; }
 
 .files-section select:focus {outline: none;}
 
@@ -260,13 +335,15 @@ ul {list-style: none;}
 
 .files-section .container .selects .places {gap: 20px;}
 
-.files-section .container .selects .places .select-block {background-color: #f8f8f8; border-radius: 20px; padding: 5px 15px; color: #818181;}
+.files-section .container .selects .select-block {background-color: #f8f8f8; border-radius: 20px; color: #818181; width: 164px; justify-content: space-between;  position: relative;}
 
-.files-section .container .selects .places .select-block select {border: none; background: none; color: #818181;}
+.files-section .container .selects .select-block i {position: absolute; left: 15px;}
 
-.files-section .container .selects .outlined {color: black; border-radius: 20px; padding: 5px 15px; border: 1px solid black;}
+.files-section .container .selects .select-block select {border: none; background: url('./images/option-triangle.png'); background-repeat: no-repeat; background-position: 90% center;   padding: 5px 15px;position: relative; right: 2px; padding-left: 41px; cursor: pointer;}
 
-.files-section .container .selects .outlined select {border: none; background: none;}
+.files-section .container .selects .outlined {color: black; border-radius: 20px; border: 1px solid black; background-color: transparent;}
+
+.files-section .container .selects .outlined select {border: none;  background: url('./images/option-triangle-black.png'); background-repeat: no-repeat; background-position: 90% center;}
 
 .files-section .container .files {flex-wrap: wrap;}
 
@@ -280,11 +357,16 @@ ul {list-style: none;}
 
 .files-section .container .files .file { text-align: center; display: flex; flex-direction: column; justify-content: space-between; border-radius: 20px; background-color: #f8f8f8; }
 
-.files-section .container .files .file .elypsis {position: absolute; top: 14px; right: 20px;}
+.files-section .container .files .file .elypsis {position: absolute; top: 14px; right: 20px; padding: 5px;}
 
 .files-section .container .files .file img.pdf-rectangle { align-self: center; margin: auto; box-shadow: 5px 5px 7px  #e6e6e6;}
 
 .files-section .container .files .file .texts { bottom: 10px; padding-bottom: 25px  }
+
+.files-section .container .files .file .download-modal {position: absolute; width: 130px; z-index: 4; background-color: white;  box-shadow: 1px 6px 11px -3px rgb(189, 189, 189); padding: 10px 15px; border-radius: 10px; transition: 0.3s; display: none; right: 40px;}
+
+.files-section .container .files .file .download-modal:hover {background-color: var(--secondary); transition: 0.3s;}
+
 
 @media (max-width: 992px){
     .files-section {padding: 60px 0;}
@@ -299,9 +381,11 @@ ul {list-style: none;}
 
     .files-section .container .selects .places {flex-direction: column; gap: 0;}
 
-    .files-section .container .selects .select-block { margin-bottom: 20px;}
+    .files-section .container .selects .select-block { margin-bottom: 20px; width: 100%;}
 
-    .files-section .container .selects select {width: 100%; }
+    .files-section .container .selects .select-block select {width: 100%; background-position: 97% center;}
+
+
 
 }
 
@@ -316,28 +400,36 @@ ul {list-style: none;}
 
 /* newsletter-section styles start */
 
-.newsletter-section {background: url('./images/newsletter-banner.jpg'); height: 325px; background-position: center 48%; background-size: cover;  margin-top: 120px}
+.newsletter-section {background: url('./images/newsletter-banner.jpg'); height: 350px; background-position: center 48%; background-size: cover;  margin-top: 170px}
 
 .newsletter-section .container {height: 100%;}
 
-.newsletter-section .container .guy {height: 450px; position: relative; bottom: 126px;}
+.newsletter-section .container .content {height: 100%; width: 100%;}
 
-.newsletter-section .container .texts {width: 50%; margin-left: auto; height: 100%; display: flex; flex-direction: column; justify-content: center; color: white;}
+.newsletter-section .container .content .newsletter-guy {width: 50%}
 
-.newsletter-section .container .texts h2 {margin-bottom: 30px; line-height: 1.1;}
+.newsletter-section .container .content .newsletter-guy img {height: 130%; position: relative; bottom: 105px}
 
-.newsletter-section .container .texts a.btn {padding: 10px 20px; background-color: var(--secondary); color: white; align-self: flex-start; border-radius: 20px; text-transform: uppercase; transition: 0.3s;}
+.newsletter-section .container .content .texts { width: 50%; margin-left: auto; height: 100%; display: flex; flex-direction: column; justify-content: center; color: white;}
 
-.newsletter-section .container .texts a.btn:hover {background-color: var(--primary); transition: 0.3s;}
+.newsletter-section .container .content .texts h2 {margin-bottom: 30px; line-height: 1.1; font-weight: 600}
+
+.newsletter-section .container .content .texts a.btn {padding: 10px 20px; background-color: var(--secondary); color: white; align-self: flex-start; border-radius: 20px; text-transform: uppercase; transition: 0.3s;}
+
+.newsletter-section .container .content .texts a.btn:hover {background-color: var(--primary); transition: 0.3s;}
+
+@media(max-width: 1200px){
+    .newsletter-section .container .content .newsletter-guy img {height: 110%; position: relative; bottom: 35px}
+}
 
 @media(max-width: 992px){
     .newsletter-section {margin-top: 0; background-position: right 48%;}
 
-    .newsletter-section .container .texts {width: 100%; text-align: center; align-items: center;}
+    .newsletter-section .container .content .texts {width: 100%; text-align: center; align-items: center;}
 
-    .newsletter-section .container .guy {display: none;}
+    .newsletter-section .container .content .newsletter-guy {display: none;}
 
-    .newsletter-section .container .texts a.btn {align-self: center;}
+    .newsletter-section .container .content .texts a.btn {align-self: center;}
 }
 
 /* newsletter-section styles end */
@@ -360,7 +452,9 @@ footer .main-footer-section .container ul li:hover a {color: var(--secondary); t
 
 footer .main-footer-section .container .circle-links {gap: 30px; }
 
-footer .main-footer-section .container .circle-links i {color: white;}
+footer .main-footer-section .container .circle-links i {color: white; line-height: 0.8}
+
+footer .main-footer-section .container .circle-links i.fa-whatsapp {font-size: 20px;}
 
 footer .main-footer-section .container .circle-links a {border-radius: 100%; background-color: var(--secondary); padding: 10px; line-height: 1; transition: 0.3s;}
 
@@ -368,11 +462,13 @@ footer .main-footer-section .container .circle-links a:hover {background-color: 
 
 footer .main-footer-section .container .circle-links a.primary-color {background-color: var(--primary);}
 
+footer .main-footer-section .container .circle-links a.primary-color:hover {background-color: var(--secondary);}
+
 @media(max-width: 992px){
     footer .main-footer-section .container ul {flex-direction: column; margin: 50px 0;}
 }
 
-@media(max-width: 540px){
+@media(max-width: 400px){
     footer .main-footer-section .container .circle-links {flex-direction: column;}
 }
 
@@ -382,12 +478,110 @@ footer .main-footer-section .container .circle-links a.primary-color {background
 
 .legales-section {background-color: #6b6b6b;  text-align: center; padding: 20px 0;}
 
-.legales-section p {color: white;}
+.legales-section p {color: white; transition: 0.3s;}
+
+.legales-section p span a {color: white; transition: 0.3s;}
+
+.legales-section p span.divider {margin: 0 30px;}
+
+.legales-section p span a:hover {color: var(--secondary); transition: 0.3s;}
+
+@media (max-width: 700px){
+    
+.legales-section p span.divider {display: none;}
+}
+
+
 
 /* legales section styles end */
 
 
+/* contact-us-page styles start */
 
 
 
+/* contact-us-page banner styles start */
 
+.contact-us-page .banner-section .carousel-banner .carousel-item {background: url('./images/contact-us-banner.jpg'); background-size: cover; height: 90vh; background-position: center; background-repeat: no-repeat;}
+
+.contact-us-page .banner-section .carousel-banner .carousel-item h1 {margin-bottom: 10px; }
+
+.contact-us-page .banner-section .carousel-banner .carousel-item .container {bottom: unset;}
+
+.contact-us-page .banner-section .carousel-banner .carousel-item .container .content {position: unset;}
+
+.contact-us-page .banner-section .carousel-banner .carousel-item h3 {color: white; font-weight: 400;}
+
+@media (max-width: 992px){
+    .contact-us-page .banner-section .carousel-banner .carousel-item h1 {margin-top: 0px}
+
+    
+}
+
+/* contact-us-page banner styles end */
+
+
+/* contact-us-page form-section styles start */
+
+
+.contact-us-page .form-section {position: relative;}
+
+.contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 368px;}
+
+.contact-us-page .form-section .container * {box-sizing: border-box;}
+
+.contact-us-page .form-section .container .form-wrapper {flex-wrap: wrap; justify-content: space-between; margin: 90px 0; position: relative; z-index: 4;}
+
+.contact-us-page .form-section .container .form-wrapper .input-div {width: calc(50% - 30px); margin-bottom: 30px;}
+
+.contact-us-page .form-section .container .form-wrapper .input-div p, .contact-us-page .form-section .container .form-wrapper .full-input-div p {font-weight: 700; padding: 5px 15px;}
+
+
+.contact-us-page .form-section .container .form-wrapper .input-div input {width: 100%;}
+
+.contact-us-page .form-section .container .form-wrapper .full-input-div {width: 100%; margin-bottom: 30px;}
+
+.contact-us-page .form-section .container .form-input {border: none; border-radius: 20px;     box-shadow: 1px 6px 11px -3px rgb(189, 189, 189); padding: 10px 15px;}
+
+.contact-us-page .form-section .container form textarea, .contact-us-page .form-section .container .form-wrapper select {width: 100%;}
+
+.contact-us-page .form-section .container .form-wrapper select {color: rgb(118, 118, 118); appearance: none; background: url('./images/option-triangle.png'); background-repeat: no-repeat; background-position: 98% 50%; background-color: white;}
+
+.contact-us-page .form-section .container .form-wrapper select .grey-option {color: rgb(118, 118, 118)}
+
+.contact-us-page .form-section .container .form-wrapper select .black-option {color: black;}
+
+.contact-us-page .form-section .container form textarea {height: 100px;}
+
+.contact-us-page .form-section .container form  button {padding: 12px 25px; background-color: var(--secondary); color: white; align-self: flex-start; border-radius: 20px; text-transform: uppercase; transition: 0.3s; border: none;}
+
+.contact-us-page .form-section .container form  button:hover {background-color: black; cursor: pointer;}
+
+@media (max-width: 992px) {
+    .contact-us-page .form-section .container .form-wrapper .input-div {width: 100%;}
+
+    .contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 445px;}
+}
+
+/* contact-us-page form-section styles end */
+
+
+
+.contact-us-page .newsletter-section {position: relative; z-index: 4;}
+
+/* contact-us-page styles end */
+
+/* about-us-page styles start */
+
+/* about-us-page banner styles start */
+
+.banner-section .carousel-banner .carousel-item .container {bottom: unset;}
+
+/* about-us-page banner styles end */
+
+
+.about-us-page .banner-section .carousel-banner .carousel-item {background: url('./images/about-us-banner.jpg'); background-size: cover; height: 90vh; background-position: center; background-repeat: no-repeat;}
+
+
+
+/* about-us-page styles end */
