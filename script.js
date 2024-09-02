@@ -32,6 +32,20 @@ $(document).ready(function() {
     $('.fa-x').click(function() {
         paintAndToggleMenu();
     });
+
+
+        function checkScreenSize() {
+            if ($(window).width() > 992) {
+                $('.mobile-menu').hide(); 
+                $('.navbar-section').removeClass('scrolled'); 
+            }
+        }
+    
+
+        checkScreenSize(); 
+        $(window).resize(function() {
+            checkScreenSize();
+        });
 });
 
 $('.carousel-banner').slick({
