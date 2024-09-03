@@ -160,9 +160,9 @@ ul {list-style: none;}
 
 .banner-section .carousel-banner .carousel-item .container .content .input-field button:hover {background-color: var(--primary);}
 
-.banner-section .carousel-banner .slick-dots {    position: absolute;bottom: 53%;display: flex;flex-direction: column;align-items: flex-end;max-width: 1200px;width: 80%;left: 0 ;right: 0; margin: auto;}
+.banner-section .carousel-banner .slick-dots {    position: absolute;bottom: 53%;display: flex;flex-direction: column;align-items: flex-end;max-width: 1200px;width: 80%;left: 0 ;right: 0; margin: auto; pointer-events: none;}
 
-.banner-section .carousel-banner .slick-dots li {line-height: 1;color: #ffffff;font-weight: 400;border-top: 2px solid #ffffffa1;width: 37px;transition: 0.3s;box-sizing: border-box; padding-bottom: 3px;}
+.banner-section .carousel-banner .slick-dots li {line-height: 1;color: #ffffff;font-weight: 400;border-top: 2px solid #ffffffa1;width: 37px;transition: 0.3s;box-sizing: border-box; padding-bottom: 3px; pointer-events: auto;}
 
 .banner-section .carousel-banner .slick-dots li.slick-active {border-top: 3px solid white;  width: 53px;  transition: 0.3s;}
 
