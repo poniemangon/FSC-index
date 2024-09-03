@@ -57,6 +57,10 @@ ul {list-style: none;}
 
 .btn-lightblue:hover {background-color: black; transition: 0.3s;}
 
+@media (max-width: 540px){
+    .btn-lightblue {font-size: 15px;}
+}
+
 /* common props */
 
 /* navbar styles start */
@@ -450,7 +454,7 @@ ul {list-style: none;}
 
     .newsletter-section .container .content .newsletter-guy {display: none;}
 
-    .newsletter-section .container .content .texts a.btn {align-self: center;}
+    .newsletter-section .container .content .texts a {align-self: center;}
 }
 
 /* newsletter-section styles end */
