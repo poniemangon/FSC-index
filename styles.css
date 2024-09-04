@@ -553,41 +553,42 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 /* contact-us-page form-section styles start */
 
 
-.contact-us-page .form-section {position: relative;}
+/* COMMON FORM STYLES */
 
-.contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 368px;}
+.form-section {position: relative;}
 
-.contact-us-page .form-section .container * {box-sizing: border-box;}
+.form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 368px;}
 
-.contact-us-page .form-section .container .form-wrapper {flex-wrap: wrap; justify-content: space-between; margin: 90px 0; position: relative; z-index: 4;}
+.form-section .container * {box-sizing: border-box;}
 
-.contact-us-page .form-section .container .form-wrapper .input-div {width: calc(50% - 20px); margin-bottom: 30px;}
+.form-wrapper {flex-wrap: wrap; justify-content: space-between; margin: 90px 0; position: relative; z-index: 4;}
 
-.contact-us-page .form-section .container .form-wrapper .input-div p, .contact-us-page .form-section .container .form-wrapper .full-input-div p {font-weight: 700; padding: 5px 15px;}
+.form-wrapper .input-div {width: calc(50% - 20px); margin-bottom: 30px;}
 
+.form-wrapper .input-div p, .form-wrapper .full-input-div p {font-weight: 700; padding: 5px 15px;}
 
-.contact-us-page .form-section .container .form-wrapper .input-div input {width: 100%;}
+.form-wrapper .input-div input {width: 100%;}
 
-.contact-us-page .form-section .container .form-wrapper .full-input-div {width: 100%; margin-bottom: 30px;}
+.form-wrapper .full-input-div {width: 100%; margin-bottom: 30px;}
 
-.contact-us-page .form-section .container .form-input {border: none; border-radius: 20px;     box-shadow: 1px 6px 11px -3px rgb(189, 189, 189); padding: 10px 15px;}
+.form-input {border: none; border-radius: 20px;     box-shadow: 1px 6px 11px -3px rgb(189, 189, 189); padding: 10px 15px;}
 
-.contact-us-page .form-section .container form textarea, .contact-us-page .form-section .container .form-wrapper select {width: 100%;}
+ form textarea,  .form-wrapper select {width: 100%;}
 
-.contact-us-page .form-section .container .form-wrapper select {color: rgb(118, 118, 118); appearance: none; background: url('./images/option-triangle.png'); background-repeat: no-repeat; background-position: 98% 50%; background-color: white;}
+ .form-wrapper select {color: rgb(118, 118, 118); appearance: none; background: url('./images/option-triangle.png'); background-repeat: no-repeat; background-position: 98% 50%; background-color: white;}
 
-.contact-us-page .form-section .container .form-wrapper select .grey-option {color: rgb(118, 118, 118)}
+.form-wrapper select .grey-option {color: rgb(118, 118, 118)}
 
-.contact-us-page .form-section .container .form-wrapper select .black-option {color: black;}
+.form-wrapper select .black-option {color: black;}
 
-.contact-us-page .form-section .container form textarea {height: 100px;}
+ form textarea {height: 100px;}
 
-.contact-us-page .form-section .container form  button {padding: 12px 25px; background-color: var(--secondary); color: white; align-self: flex-start; border-radius: 20px; text-transform: uppercase; transition: 0.3s; border: none;}
+ form  button {padding: 12px 25px; background-color: var(--secondary); color: white; align-self: flex-start; border-radius: 20px; text-transform: uppercase; transition: 0.3s; border: none;}
 
-.contact-us-page .form-section .container form  button:hover {background-color: black; cursor: pointer;}
+ form  button:hover {background-color: black; cursor: pointer;}
 
 @media (max-width: 992px) {
-    .contact-us-page .form-section .container .form-wrapper .input-div {width: 100%;}
+     .form-wrapper .input-div {width: 100%;}
 
     .contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 445px;}
 }
@@ -709,3 +710,67 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 .about-us-page .newsletter-section { margin-top: 0px}
 
 /* about-us-page styles end */
+
+/* network page styles start */
+
+/* network page banner styles start */
+
+
+
+/* network page banner styles start */
+
+.network-page .banner-section {background: url("./images/network-banner.jpg"); height: 90vh; background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+.network-page .banner-section .container {height: 100%;}
+
+.network-page .banner-section .container .content {flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; color: white;}
+
+.network-page .banner-section .container .content h3 {font-weight: 400;}
+
+.network-page .banner-section .container .content .btn-lightblue {margin-top: 50px;}
+
+
+
+/* network page form styles start */
+
+.network-page .form-section .container .content {justify-content: space-between; flex-wrap: wrap; flex-direction: row-reverse; margin-top: 60px;}
+
+.network-page .form-section .container .content h2 {margin-bottom: 10px; position: relative; left: 10px;}
+
+.network-page .form-section .container .content p.sub {margin-bottom: 60px;position: relative; left: 10px;}
+
+.network-page .form-section .container .content .col {width: calc(50% - 30px);  object-fit: cover;}
+
+.network-page .form-section .container .content .col form .form-wrapper {margin: 0;}
+
+.network-page .form-section .container .content .col form .form-wrapper textarea {height: 70px;}
+
+.network-page .form-section .container .content .col form .form-wrapper button {align-self: flex-start}
+
+.network-page .form-section .container .content .col form .form-wrapper .full-input-div:nth-last-child(1) {margin-bottom: 0;}
+
+@media (max-width: 992px){
+    .network-page .form-section .container .content {flex-direction: column-reverse;}
+
+    .network-page .form-section .container .content .col {width: 100%;}
+
+    .network-page .form-section .container .content img.col {max-height: 500px; margin-bottom: 60px;}
+
+    .network-page .form-section .container .content .col p.sub {text-align: center;}
+
+    .network-page .form-section .container .content .col h2 {text-align: center;}
+
+    .network-page .form-section .container .content .col form .form-wrapper {text-align: center;}
+
+    .network-page .form-section .container .content .col form .form-wrapper .full-input-div  {justify-content: center;}
+
+    .network-page .form-section .container .content  {margin-bottom: 60px;}
+
+    
+}
+
+/* network page form styles end  */
+
+
+
+/* network page styles end */
