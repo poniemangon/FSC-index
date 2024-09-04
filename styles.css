@@ -561,7 +561,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .contact-us-page .form-section .container .form-wrapper {flex-wrap: wrap; justify-content: space-between; margin: 90px 0; position: relative; z-index: 4;}
 
-.contact-us-page .form-section .container .form-wrapper .input-div {width: calc(50% - 30px); margin-bottom: 30px;}
+.contact-us-page .form-section .container .form-wrapper .input-div {width: calc(50% - 20px); margin-bottom: 30px;}
 
 .contact-us-page .form-section .container .form-wrapper .input-div p, .contact-us-page .form-section .container .form-wrapper .full-input-div p {font-weight: 700; padding: 5px 15px;}
 
