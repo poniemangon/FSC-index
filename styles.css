@@ -113,7 +113,7 @@ ul {list-style: none;}
 
 /* DARK NAV */
 
-.dark-nav .navbar-section img {transition: 0.8s;}
+.dark-nav .navbar-section img {transition: 0.8s; content: url('./images/logo-white.png')}
 
 .dark-nav .navbar-section a {color: white;}
 
