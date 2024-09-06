@@ -573,7 +573,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .form-input {border: none; border-radius: 20px;     box-shadow: 1px 6px 11px -3px rgb(189, 189, 189); padding: 10px 15px;}
 
- form textarea,  .form-wrapper select {width: 100%;}
+ form textarea,  .form-wrapper select {width: 100%; resize: none;}
 
  .form-wrapper select {color: rgb(118, 118, 118); appearance: none; background: url('./images/option-triangle.png'); background-repeat: no-repeat; background-position: 98% 50%; background-color: white;}
 
