@@ -13,13 +13,13 @@ h1 {font-family: 'Inter', sans-serif; font-size: 70px; font-weight: 700}
 
 h2 {font-family: 'Inter', sans-serif; font-size: 50px; font-weight: 700}
 
-h3 {font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 700}
+h3 {font-family: 'Inter', sans-serif; font-size: 33px; font-weight: 700}
 
 h4 {font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 700}
 
 h5 {font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400}
 
-p, a, li, button, input, select {font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; text-decoration: none; color: black;}
+p, a, li, button, input, select, textarea {font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 400; text-decoration: none; color: black;}
 
 ul {list-style: none;}
 
@@ -31,7 +31,26 @@ ul {list-style: none;}
     h1 {font-family: 'Inter', sans-serif; font-size: 56px; font-weight: 700}
 
     h2 {font-family: 'Inter', sans-serif; font-size: 42px; font-weight: 700}
+
+    h3 {font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 700}
+
+    h4 {font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700}
+
+    h5 {font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400}
 }
+
+@media (max-width: 767px){
+    h1 {font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 700}
+
+    h2 {font-family: 'Inter', sans-serif; font-size: 36px; font-weight: 700}
+
+    h3 {font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700}
+
+    h4 {font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 700}
+
+    h5 {font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 400}
+}
+
 
 /* fonts */
 
@@ -57,6 +76,8 @@ ul {list-style: none;}
 
 .btn-lightblue:hover {background-color: black; transition: 0.3s;}
 
+.newsletter-section .btn-lightblue  {padding: 13px 35px;}
+
 @media (max-width: 540px){
     .btn-lightblue {font-size: 15px;}
 }
@@ -72,6 +93,8 @@ ul {list-style: none;}
 .navbar-section .container {padding: 40px 0;}
 
 .navbar-section a {transition: 0.3s;}
+
+.navbar-section .active-underline {border-bottom: 1px solid rgba(255, 255, 255, 0.5); line-height: 1; padding: 0 2px;}
 
 .navbar-section a:hover {transition: 0.3s; color: var(--secondary);}
 
@@ -444,6 +467,8 @@ ul {list-style: none;}
 /* .newsletter-section .container .content .texts a.btn:hover {background-color: var(--primary); transition: 0.3s;} */
 
 @media(max-width: 1200px){
+    .newsletter-section { margin-top: 100px}
+
     .newsletter-section .container .content .newsletter-guy img {height: 110%; position: relative; bottom: 35px}
 }
 
@@ -477,11 +502,11 @@ footer .main-footer-section .container ul li:hover a {color: var(--secondary); t
 
 footer .main-footer-section .container .circle-links {gap: 30px; }
 
-footer .main-footer-section .container .circle-links i {color: white; line-height: 0.8}
+footer .main-footer-section .container .circle-links i {color: white; line-height: 0.8; font-size: 13px; position: relative; bottom: 1px;}
 
-footer .main-footer-section .container .circle-links i.fa-whatsapp {font-size: 20px;}
+footer .main-footer-section .container .circle-links i.fa-whatsapp {font-size: 16px; position: unset;}
 
-footer .main-footer-section .container .circle-links a {border-radius: 100%; background-color: var(--secondary); padding: 10px; line-height: 1; transition: 0.3s;}
+footer .main-footer-section .container .circle-links a {border-radius: 100%; background-color: var(--secondary); padding: 10px 11px; line-height: 1; transition: 0.3s;}
 
 footer .main-footer-section .container .circle-links a:hover {background-color: var(--primary);}
 
@@ -557,7 +582,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .form-section {position: relative;}
 
-.form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 368px;}
+.form-section .logo-bg {position: absolute; z-index: -1; right: 0; top: 368px;}
 
 .form-section .container * {box-sizing: border-box;}
 
@@ -565,7 +590,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .form-wrapper .input-div {width: calc(50% - 20px); margin-bottom: 30px;}
 
-.form-wrapper .input-div p, .form-wrapper .full-input-div p {font-weight: 700; padding: 5px 15px;}
+.form-wrapper .input-div p, .form-wrapper .full-input-div p {font-weight: 800; padding: 5px 15px;}
 
 .form-wrapper .input-div input {width: 100%;}
 
@@ -590,7 +615,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 @media (max-width: 992px) {
      .form-wrapper .input-div {width: 100%;}
 
-    .contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 445px;}
+    .contact-us-page .form-section .logo-bg {position: absolute; z-index: 0; right: 0; top: 345px;}
 }
 
 /* contact-us-page form-section styles end */
@@ -634,7 +659,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .about-us-page .secondary-banner-section .container .content img {height: 90px; margin-right: 10px; margin-bottom: 10px;}
 
-.about-us-page .secondary-banner-section .container .content .texts p {position: relative; left: 35px;}
+.about-us-page .secondary-banner-section .container .content .texts p {position: relative; left: 35px; font-weight: 600;}
 
 
 @media (max-width: 540px){
@@ -655,7 +680,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .about-us-page .funeral-texts-section .row .text-col .texts {max-width: 600px; width: 80%; display: flex; flex-direction: column; justify-content: center; height: 100%;}
 
-.about-us-page .funeral-texts-section .row .text-col .texts h3 {font-weight: 400; margin-bottom: 20px}
+.about-us-page .funeral-texts-section .row .text-col .texts h3 {font-weight: 400; margin-bottom: 20px; line-height: 1.2;}
 
 @media (max-width: 992px){
     .about-us-page .funeral-texts-section .row {flex-direction: column; gap: 0;}
@@ -679,9 +704,9 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 .about-us-page .cards-section .container .content h3 {text-align: center; font-weight: 400;margin-bottom: 60px;}
 
-.about-us-page .cards-section .container .content .cards {flex-wrap: wrap; justify-content: space-between; margin: auto; width: 90%; margin-bottom: 40px;}
+.about-us-page .cards-section .container .content .cards {flex-wrap: wrap; justify-content: space-between; margin: auto; width: 90%; margin-bottom: 25px;}
 
-.about-us-page .cards-section .container .content .cards .card {width: calc(50% - 20px); border-radius: 30px; box-shadow: 1px 1px 13px -4px #9d9d9d; padding: 35px; box-sizing: border-box; margin-bottom: 30px; background-color: white;}
+.about-us-page .cards-section .container .content .cards .card {width: calc(50% - 20px); border-radius: 30px; box-shadow: 0px 4px 12px -3px #9d9d9d8c; padding: 35px; box-sizing: border-box; margin-bottom: 30px; background-color: white;}
 
 .about-us-page .cards-section .container .content .cards .card img {height: 80px; position: relative; bottom: 20px; padding-left: 10px;}
 
@@ -733,7 +758,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
 /* network page form styles start */
 
-.network-page .form-section .container .content {justify-content: space-between; flex-wrap: wrap; flex-direction: row-reverse; margin-top: 60px;}
+.network-page .form-section .container .content {justify-content: space-between; flex-wrap: wrap; flex-direction: row-reverse; margin-top: 80px;}
 
 .network-page .form-section .container .content h2 {margin-bottom: 10px; position: relative; left: 10px;}
 
@@ -748,6 +773,8 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 .network-page .form-section .container .content .col form .form-wrapper button {align-self: flex-start}
 
 .network-page .form-section .container .content .col form .form-wrapper .full-input-div:nth-last-child(1) {margin-bottom: 0;}
+
+.network-page .form-section .logo-bg {position: absolute; z-index: -1; right: 0; top: 500px;}
 
 @media (max-width: 992px){
     .network-page .form-section .container .content {flex-direction: column-reverse;}
@@ -766,6 +793,7 @@ footer .main-footer-section .container .circle-links a.primary-color:hover {back
 
     .network-page .form-section .container .content  {margin-bottom: 60px;}
 
+    .network-page .form-section .logo-bg {position: absolute; z-index: -1; right: 0; top: 80%;}
     
 }
 
