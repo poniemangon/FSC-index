@@ -867,7 +867,7 @@ main.search-page {margin-top: 117px}
 
 .search-page .form-section .container .row form .form-input {padding: 5px; color: black; font-size: 14px; letter-spacing: -0.5px; font-weight: 500;}
 
-.search-page .form-section .container .row form select {border-radius: 0; box-shadow: none; border-bottom: 1px solid #d7d7d7; background: url('./images/arrow-down.png'); background-repeat: no-repeat; background-position: 100%;}
+.search-page .form-section .container .row form select {border-radius: 0; box-shadow: none; border-bottom: 1px solid #d7d7d7; background: url('./images/arrow-down.png'); background-repeat: no-repeat; background-position: 96%;}
 
 .search-page .form-section .container .row form select:focus {outline: none;}
 
@@ -898,7 +898,7 @@ main.search-page {margin-top: 117px}
 
     .search-page .form-section .container .row form .form-wrapper {margin-bottom: 0;}
 
-    .search-page .form-section .container .row form .margin-extra {margin-bottom: 30px;}
+    .search-page .form-section .container .row form .input-div.margin-extra {margin-bottom: 40px;}
 
     .search-page .form-section .container .row form .input-div {width: calc(50% - 20px); }
 
