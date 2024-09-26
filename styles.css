@@ -838,7 +838,7 @@ main.search-page {margin-top: 117px}
 
 .search-page .form-section .container h1 {font-size: 50px; font-weight: 400; text-align: center; line-height: 1;}
 
-.search-page .form-section .container .row {justify-content: space-between; width: 80%; margin: auto; padding-top: 40px;}
+.search-page .form-section .container .row {justify-content: space-between; width: 85%; margin: auto; padding-top: 40px;}
 
 .search-page .form-section .container .row .col {width: calc(50% - 35px)}
 
