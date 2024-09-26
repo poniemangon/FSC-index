@@ -186,6 +186,8 @@ ul {list-style: none;}
 
 .blue-nav .navbar-section a {color: white;}
 
+.blue-nav .navbar-section a:hover {color: black}
+
 .blue-nav .navbar-section .btn {border: solid 1px white;}
 
 .blue-nav .navbar-section .btn a {color: white;}
