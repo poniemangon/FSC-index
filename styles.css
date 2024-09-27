@@ -1,5 +1,6 @@
 * {margin: 0; padding: 0}
 
+html {scroll-behavior: smooth;}
 
 :root {
     --primary: #2b2a2a;
@@ -932,7 +933,7 @@ main.search-page {margin-top: 117px}
 
 /* files section styles start */
 
-.files-section {padding-top: 0;}
+.files-section {padding-top: 0; scroll-margin-top: 100px;}
 
 /* files section styles end */
 
