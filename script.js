@@ -58,6 +58,14 @@ $('.carousel-banner').slick({
     initialSlide: 1,
   });
 
+  $('input').on('focus', function() {
+    $(this).addClass('active-input');
+    $('.carousel-banner').slick('slickSetOption', 'draggable', false); // Disable dragging
+  }).on('blur', function() {
+    $(this).removeClass('active-input');
+    $('.carousel-banner').slick('slickSetOption', 'draggable', true); // Re-enable dragging
+  });
+
 
   $(document).ready(function() {
     // Toggle the download-modal inside the respective file div
